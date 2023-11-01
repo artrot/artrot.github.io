@@ -1,0 +1,55 @@
+menu a {
+    margin-right: 1em;
+}
+menu span {
+    font-size: 2em;
+    color: rgb(111, 43, 0);
+    margin-right: 1em;
+}
+body {
+    background-color: deepskyblue;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+div {
+    display: flex;
+    justify-content: center;
+}
+img {
+    max-width: 100%;
+}
+a {color: rgb(89, 55, 221); 
+    font-size: 2em; }
+div {
+    display: flex;
+    justify-content: center;
+}
+body { 
+    background-image: url('./tor1234.avif');
+    background-size: cover;
+}
+h1 {
+    color: rgb(139, 23, 0);
+    font-family: 'Times New Roman', Times, serif;
+}
+h2 {
+    margin: 1em auto;
+    width: fit-content;
+    color: sienna;
+    font-size: 2em;
+    font-style: italic;
+}
+h3 {
+    margin: 1em auto;
+    width: fit-content;
+    color: sienna;
+    font-size: 2em;
+    font-style: italic;
+}
+a:visited {
+    color: rgb(89, 55, 221);
+}
+p { 
+    font-size: 2em;
+    color: sienna;
+    /* color: rgb(40, 120, 120); */
+}
