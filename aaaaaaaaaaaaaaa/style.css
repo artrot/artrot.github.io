@@ -1,0 +1,79 @@
+h1 {
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: red;
+}
+body {
+    background-color: aqua;
+    cursor: url(../wot_arrow.cur) 5 5, pointer;
+    margin: 0;
+    
+}
+p {
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.stand {
+    flex-wrap: wrap;
+    text-align: center;
+}
+ul {
+    list-style: none;
+    display: flex;
+    margin-top: 0;
+    padding-top: 0;
+    justify-content: center;
+    /* margin: 0 auto; */
+}
+.brok {
+    border: 6px;
+    background-color: black;
+    height: 6em;
+    width: 100%;
+}
+
+.brok ul li a {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 4em;
+}
+.brok ul li {
+    margin-right: 2em;
+}
+
+.brok ul li a {
+    text-decoration: none;
+}
+.brok ul li a:visited {
+    color: grey;
+    text-decoration: none;
+}
+.brok li a:hover {
+    text-decoration: underline;
+}
+p {
+    font-size: 1.2em;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    padding: 30px;
+}
+footer {
+    background-color: rgb(110, 110, 110);
+    height: 100px;
+    text-align: center;
+}
+footer a {
+    color: black;
+    font-size: 3em;
+    text-decoration: none;
+}
+footer a:visited {
+    text-decoration: none;
+    color: black;
+}
+footer a:hover {
+    text-decoration: underline;
+}
