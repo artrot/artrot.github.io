@@ -6,7 +6,7 @@ h1 {
 }
 body {
     background-color: aqua;
-    cursor: url(../wot_arrow.cur) 5 5, pointer;
+    cursor: url("../wot_arrow.cur") 5 5, pointer;
     margin: 0;
     
 }
@@ -19,38 +19,41 @@ p {
     flex-wrap: wrap;
     text-align: center;
 }
-ul {
+/* ul {
     list-style: none;
     display: flex;
     margin-top: 0;
     padding-top: 0;
     justify-content: center;
-    /* margin: 0 auto; */
-}
+    margin: 0 auto;
+} */
 .brok {
     border: 6px;
     background-color: black;
     height: 6em;
     width: 100%;
+    margin-right: 2em;
+    display: flex;
 }
 
-.brok ul li a {
+.brok a {
     display: flex;
     flex-wrap: wrap;
     font-size: 4em;
-}
-.brok ul li {
-    margin-right: 2em;
-}
-
-.brok ul li a {
     text-decoration: none;
 }
-.brok ul li a:visited {
+/* .brok ul li {
+    margin-right: 2em;
+} */
+
+/* .brok a {
+    text-decoration: none;
+} */
+.brok a:visited {
     color: grey;
     text-decoration: none;
 }
-.brok li a:hover {
+.brok a:hover {
     text-decoration: underline;
 }
 p {
@@ -77,3 +80,35 @@ footer a:visited {
 footer a:hover {
     text-decoration: underline;
 }
+nav ul ul {
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover > ul {
+    display:inherit;
+    top: 15px;
+    background-color: rgb(47, 161, 206);
+}
+nav ul ul li {
+    display:list-item;
+
+}
+nav ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+    left: 0;
+    }
+
+nav ul li a {
+    padding: 0;
+}
+nav ul li {
+    display:inline-block;
+    }
+    li a {
+        display: flex;
+        margin-right: 7em;
+    }
