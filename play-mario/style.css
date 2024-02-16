@@ -94,6 +94,7 @@ padding: 0;
 }
 nav ul li {
 display:inline-block;
+<<<<<<< HEAD
 }
 @media (max-width: 425px) {
   body {
@@ -102,4 +103,6 @@ display:inline-block;
 }
 html {
   cursor: url("wot_arrow.cur") 5 5, pointer;
+=======
+>>>>>>> b79575f983ec770f6446e2bd19140b30737bbbcc
 }
