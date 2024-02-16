@@ -1,0 +1,105 @@
+h1 {
+    margin: 0;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: rgb(17, 17, 17);
+  } 
+  body {
+    margin: 0;
+    padding: 0;
+    /* background-color: aquamarine; */
+    background-image: url("fon.jpg");
+    background-attachment: fixed;
+  } 
+  p {
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: sienna;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .fon {
+    background-color: rgb(130, 167, 192);
+    width: 100%;
+    border-radius: 70px;
+    width: 80%;
+    margin: auto;
+  }
+  .centrpic {
+    text-align: center;
+    margin: auto;
+    width: fit-content;
+  }
+  .centrpic img {
+    margin-right: 30px;
+  }
+  .transparent {
+    height: 400px;
+  }
+  .foncont {
+    background-color: rgb(72, 182, 255);
+    width: 100%;
+    width: 80%;
+    margin: auto;
+    width: 100%;
+  }
+  a {
+    font-size: 2em;
+  }
+  footer {
+    background-color: black;
+        color: white;
+        width: 100%;
+  }
+  .footer-content {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(8, 8, 8);
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 50%;
+  }
+  .footer-content a {
+    color: white;
+    text-decoration: none;
+  }
+  .footer-content a:hover {
+    color: red;
+  }
+  nav ul ul {
+display: none;
+position: absolute;
+}
+
+nav ul li:hover > ul {
+display:inherit;
+top: 15px;
+background-color: rgb(47, 161, 206);
+}
+nav ul ul li {
+display:list-item;
+
+}
+nav ul {
+padding:0;
+margin:0;
+list-style: none;
+position: relative;
+left: 0;
+}
+
+nav ul li a {
+padding: 0;
+}
+nav ul li {
+display:inline-block;
+}
+@media (max-width: 425px) {
+  body {
+    background: white;
+  }
+}
+html {
+  cursor: url("wot_arrow.cur") 5 5, pointer;
+}

@@ -1,0 +1,74 @@
+h1 {
+    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: sienna;
+    border: 6px solid orange;
+    border-radius: 4px;
+    width: fit-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    margin: auto;
+}
+body {
+    background-color: aqua;
+    margin: 0;
+}
+html {
+    cursor: url(../wot_arrow.cur) 5 5, pointer;
+}
+.fon {
+    text-align: center;
+}
+ul {
+    list-style: none;
+    display: flex;
+    margin-top: 0;
+    padding-top: 0;
+    justify-content: center;
+    /* margin: 0 auto; */
+}
+.brok {
+    border: 6px;
+    background-color: black;
+    height: 6em;
+    width: 100%;
+}
+
+.brok ul li a {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 4em;
+}
+.brok ul li {
+    margin-right: 2em;
+}
+
+.brok ul li a {
+    text-decoration: none;
+}
+.brok ul li a:visited {
+    color: grey;
+    text-decoration: none;
+}
+.brok li a:hover {
+    text-decoration: underline;
+}
+footer {
+    background-color: rgb(110, 110, 110);
+    height: 100px;
+    text-align: center;
+}
+footer a {
+    color: black;
+    font-size: 3em;
+    text-decoration: none;
+}
+footer a:visited {
+    text-decoration: none;
+    color: black;
+}
+footer a:hover {
+    text-decoration: underline;
+}

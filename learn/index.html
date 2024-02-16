@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: cornsilk;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .contaner-blok {
+        background: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+        font-size: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        max-width: 400px;
+        text-align: center;
+        }
+        
+        .contaner-blok strong {
+            line-height: 20px;
+        }
+
+        .contaner-blok p {
+            margin: 25px 0;
+            line-height: 20px;
+        }
+
+        .contener-image {
+            margin: 20px 0;
+            display: flex;
+        }
+
+        .contener-bag {
+            cursor: pointer;
+            flex: 1;
+            padding: 20px;
+            margin: 10px 5px;
+        }
+
+        .contener-bag.active,
+        .contener-bag:hover {
+            border-radius: 4px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contener-bag img {
+            width: 40px;
+        }
+
+        .btn {
+            background: rgb(255, 166, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="contaner-blok">
+        <strong>Оставте пожалуйста свой отзыв!!!!!</strong>
+        <div class="contaner-image">
+            <div class="contener-bag">
+                <img src="./amogi_files/pngtree-sad-emoji-3d-icon-social-media-facebook-png-image_5952574.png" width="100" alt="">
+                <small>Unhappy</small>
+            </div>
+            <div class="contener-bag">
+                <img src=".//amoging_files/pngtree-neutral-emoji-png-png-image_5790011.jpg" width="100" alt="">
+                <small>Neutral</small>
+            </div>
+            <div class="contener-bag">
+                <img src="./amogi2_files/pngtree-happy-emoji-3d-rendering-png-image_8129910.png" width="100" alt="">
+                <small>Happy</small>
+            </div>
+        </div>
+        <button class="btn" id="send">Отправить</button>
+    </div>
+</body>
+<script>
+const contenersEl = document.querySelectorAll(".contener-bag");
+const sendBtn = document.querySelector(".btn");
+const panel = document.querySelector(".contaner-blok");
+
+contenersEl.forEach(el => {
+    el.addEventListener("click", function(){
+        contenersEl.forEach( innerEl => {
+            innerEl.classlist.remove("active");
+        });
+
+        el.classlist.add("active");
+    });
+});
+
+sendBtn.addEventListener("click", () => {
+    panel.innerHTML = '<strong> Спасибо за отзыв!!!</strong> <p>Привет</p>';
+    
+});
+console.log("Привет")
+</script>
+</html>

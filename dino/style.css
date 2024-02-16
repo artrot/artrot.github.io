@@ -1,0 +1,21 @@
+h1 {
+    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: black;
+    border: 6px solid orangered;
+    border-radius: 8px;
+    width: fit-content;
+    margin: auto;
+}
+@media (max-width: 425px) {
+    body {
+      background: white;
+    }
+}
+body {
+    background-color: aqua;
+}
+html {
+    cursor: url("../wot_arrow.cur") 5 5, pointer;
+}
