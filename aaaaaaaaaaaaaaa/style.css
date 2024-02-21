@@ -12,7 +12,7 @@ body {
     background-color: aqua;
     margin: 0;
     background-color: aqua;
-    cursor: url("../wot_arrow.cur") 5 5, pointer;
+}
 p {
     font-size: 2em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -114,12 +114,9 @@ nav ul li {
     li a {
         display: flex;
         margin-right: 7em;
-<<<<<<< HEAD
     }
     @media (max-width: 425px) {
         body {
           background: white;
         }
-=======
->>>>>>> b79575f983ec770f6446e2bd19140b30737bbbcc
     }
