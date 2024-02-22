@@ -14,8 +14,77 @@ h1 {
     }
 }
 body {
-    background-color: aqua;
+    background-image: url("./dino2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
 }
+html {
+    cursor: url("../wot_arrow.cur") 5 5, pointer;
+}
+.bino {
+    background-color: aqua;
+    border-radius: 8px;
+    margin-left: 5em;
+    margin-right: 5em;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.nnnnn {
+    text-align: center;
+}
+h2 {
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.gg {
+    background-color: sienna;
+    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aqua;
+}
+button {
+    width: 100%;
+    height: fit-content;
+    font-size: 2em;
+}
+p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    font-size: 2em;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover > ul {
+    display:inherit;
+    top: 15px;
+    background-color: rgb(47, 161, 206);
+}
+nav ul ul li {
+    display:list-item;
+
+}
+nav ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+    left: 0;
+    }
+
+nav ul li a {
+    padding: 0;
+}
+nav ul li {
+    display:inline-block;
+    }
 html {
     cursor: url("../wot_arrow.cur") 5 5, pointer;
 }
