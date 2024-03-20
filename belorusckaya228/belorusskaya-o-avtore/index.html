@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Об авторе</title>
+    <link rel="shortcut icon" href="../pervay-proect/icon2.png" type="image/x-icon">
+    <style>
+        h1 {
+            font-size: 2em;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            color: black;
+            z-index: 601;
+        }
+        html {
+            overflow-y: auto;
+            cursor: url("../wot_arrow.cur") 5 5, pointer;
+            margin: 0;
+            z-index: 602;
+        }
+        p {
+            font-size: 1.5em;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+            z-index: 603;
+        }
+        .sigma {
+           text-align: center; 
+    z-index: 661;
+        }
+        .sigma img {
+             flex-wrap: wrap;
+             z-index: 604;
+        }
+        @keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+}
+.waveWrapperInner {
+    background-image: linear-gradient(to top, #86377b 60%, #27273c 70%);
+}
+.bgTop {
+    z-index: 3;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 0;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 2;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 28%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 30% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 40% 50px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+.ty{
+    z-index: 600;
+}
+body {
+    background-color: aqua;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+    display: flex;
+    margin-top: 0;
+    padding-top: 0;
+    justify-content: center;
+    /* margin: 0 auto; */
+}
+.brok {
+    border: 6px;
+    background-color: black;
+    height: 6em;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.brok ul li a {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2em;
+}
+.brok ul li {
+    margin-right: 2em;
+}
+
+.brok ul li a {
+    text-decoration: none;
+}
+.brok ul li a:visited {
+    color: grey;
+    text-decoration: none;
+}
+.brok li a:hover {
+    text-decoration: underline;
+}
+header {
+    padding: 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brok">
+        <ul>
+            <li>
+        <a href="https://wwworker.github.io/" target="_blank" rel="noopener noreferrer">о нас</a>
+    </li>
+    <li> 
+        <a href="../belorusskaya/index.html" target="_blank" rel="noopener noreferrer">назад</a>
+    </li>
+    <li>
+        <a href="../bellorusskaya-galereya/index.html" target="_blank" rel="noopener noreferrer">галерея</a>
+    </li>  
+    <li>
+        <a href="../metro/index.html" target="_blank" rel="noopener noreferrer">главная</a>
+    </li>  
+    <li>
+        <a href="../koltsevaya-liniya/index.html" target="_blank" rel="noopener noreferrer">на кольцевую линию</a>
+    </li>                       
+        </ul>
+    </div>  
+</header>
+<br>
+    <div class="ty">
+    <h1>Об авторе</h1>
+    <p>
+        Меня зовут Артемий. Я живу в Москве и я увлекаюсь веб-дизайном, гандболом, и рисованием!!! Я живу в районе раменки.
+    </p>
+    <div class="sigma">
+    <img src="./sigma.jpg" alt="">
+    <img src="./sigma-2.jpg" alt="">
+    </div></div>
+
+    <div class="waveWrapper waveAnimation" style="    z-index: 0;">
+        <div class="waveWrapperInner bgTop">
+          <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgMiddle">
+          <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgBottom">
+          <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+        </div>
+      </div>
+</div>
+</body>
+</html>

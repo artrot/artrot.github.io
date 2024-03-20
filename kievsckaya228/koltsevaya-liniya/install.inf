@@ -1,0 +1,51 @@
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur,Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%Cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%Unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+"wot_arrow.cur"
+"wot_help.cur"
+"wot_fon.cur"
+"wot_un.cur"
+"wot_cross.cur"
+"wot_text.cur"
+"wot_writ.cur"
+"wot_no.cur"
+"wot_vert.cur"
+"wot_horz.cur"
+dgn1.cur"
+dgn2.cur"
+"wot_move.cur"
+"wot_uparrow.cur"
+"wot_link.cur"
+
+[Strings]
+CUR_DIR         = "Cursors\WoT"
+SCHEME_NAME     = "WoT"
+pointer		= "wot_arrow.cur"
+help		= "wot_help.cur"
+work		= "wot_fon.cur"
+busy		= "wot_un.cur"
+cross		= "wot_cross.cur"
+text		= "wot_text.cur"
+hand		= "wot_writ.cur"
+unavailiable	= "wot_no.cur"
+vert		= "wot_vert.cur"
+horz		= "wot_horz.cur"
+dgn1		= "dgn1.cur"
+dgn2		= "dgn2.cur"
+move		= "wot_move.cur"
+alternate	= "wot_uparrow.cur"
+link		= "wot_link.cur"
